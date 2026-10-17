@@ -1,0 +1,20 @@
+
+:root{--bg:#EDEFEA;--paper:#F7F8F5;--ink:#1B2630;--mute:#55636E;--rule:#C9CFC8;--accent:#9A6A12;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14191E;--paper:#1B2229;--ink:#E4E8EA;--mute:#9AA8B2;--rule:#34404A;--accent:#D9A441;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14191E;--paper:#1B2229;--ink:#E4E8EA;--mute:#9AA8B2;--rule:#34404A;--accent:#D9A441;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.075rem/1.65 Newsreader,Georgia,"Times New Roman",serif}
+.site{max-width:800px;margin:0 auto;padding:1.1rem 1.25rem;display:flex;gap:1.4rem;align-items:baseline;font:.9rem/1.4 "Instrument Sans",system-ui,sans-serif}
+.site .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:auto}
+.site a{color:var(--mute);text-decoration:none}.site a:hover{color:var(--ink)}
+.wrap{max-width:800px;margin:0 auto;padding:1rem 1.25rem 4rem}
+h1{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.12;font-weight:600;margin:.4em 0 .6em}
+h2{font-family:Georgia,serif;font-weight:400;font-size:1.45rem;margin:2.2em 0 .5em;border-top:1px solid var(--rule);padding-top:.7em}
+h3{font:600 1rem/1.35 "Instrument Sans",system-ui,sans-serif;color:var(--accent);margin:1.8em 0 .4em}
+p{margin:0 0 1rem;max-width:66ch}
+ul{margin:0 0 1rem;padding-left:1.3em} li{margin:.25em 0}
+code{font-size:.92em;background:var(--paper);padding:.05em .25em;border-radius:4px}
+.review{background:var(--paper);border-left:3px solid var(--accent);padding:.8rem 1rem;border-radius:0 8px 8px 0;margin:0 0 1.5rem;font:.92rem/1.5 "Instrument Sans",system-ui,sans-serif;color:var(--mute)}
+.pager{display:flex;justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--rule);font:.9rem/1.4 "Instrument Sans",system-ui,sans-serif}
+.pager a{color:var(--mute);text-decoration:none}.pager a:hover{color:var(--ink)}
+footer{max-width:800px;margin:2rem auto 0;padding:1.5rem 1.25rem 3rem;color:var(--mute);font:.85rem/1.5 "Instrument Sans",system-ui,sans-serif}

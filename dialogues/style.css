@@ -7,7 +7,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font:1.075rem/1.65 Newsreade
 .site .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:auto}
 .site a{color:var(--mute);text-decoration:none}.site a:hover{color:var(--ink)}
 .wrap{max-width:760px;margin:0 auto;padding:1rem 1.25rem 4rem}
-.kicker{font:600 .78rem/1.4 "Instrument Sans",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:2.2rem 0 .3rem}
+.kicker{display:inline-block;font:600 .72rem/1.4 "Instrument Sans",system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--accent);border-radius:999px;padding:.34em .8em;margin:2.2rem 0 .9rem}
+.kicker a{color:var(--accent);text-decoration:none}
+.kicker a:hover{border-bottom:1px solid var(--accent)}
 h1{font-size:clamp(1.9rem,4.5vw,2.7rem);line-height:1.1;font-weight:600;margin:.3em 0 .45em}
 .sub{color:var(--mute);max-width:60ch;margin:0 0 1.2rem;font-size:1.05rem}
 .byline{font:.85rem/1.5 "Instrument Sans",system-ui,sans-serif;color:var(--mute);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:.7rem 0;margin:0 0 2rem}

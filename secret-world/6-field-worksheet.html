@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 6 — The Official Field Worksheet · The Secret World</title>
+<meta name="description" content="A printable worksheet for mapping a glitch: the real problem, the map, the tools, the upgrade, and the Portal.">
+<meta name="theme-color" content="#0b1030">
+<link rel="stylesheet" href="sw.css">
+<style>
+  form.sheet{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.6rem 1.5rem;margin:1.5rem 0}
+  form.sheet h3{margin-top:1.6rem}
+  label.field{display:block;margin:1rem 0 .35rem;color:var(--mute);font-size:.85rem;letter-spacing:.06em}
+  input[type=text],textarea{
+    width:100%;background:var(--navy);border:1px solid var(--line);border-radius:8px;
+    color:var(--ink);font:inherit;padding:.7em .8em;resize:vertical;
+  }
+  textarea{min-height:4.5em}
+  input[type=text]:focus,textarea:focus{outline:2px solid var(--pink);outline-offset:1px}
+  .row{display:grid;grid-template-columns:1fr;gap:1rem}
+  @media(min-width:700px){.row.two{grid-template-columns:1fr 1fr}}
+  .check{display:flex;gap:1.2rem;flex-wrap:wrap;color:var(--ink);font-size:.95rem}
+  .check label{display:flex;gap:.45em;align-items:center}
+  .printbar{display:flex;gap:1rem;align-items:center;margin:1rem 0}
+  button.print{background:var(--pink);color:#1a1030;border:0;border-radius:999px;padding:.7em 1.4em;font:inherit;font-weight:700;cursor:pointer}
+  @media print{
+    body{background:#fff;color:#111}
+    nav.top,.printbar,footer,nav.pager{display:none}
+    .hero{padding:0 0 1rem}
+    .hero h1,.kicker{color:#111}
+    .band{padding:1rem 0;border-color:#ddd}
+    h2,h3{color:#111}
+    form.sheet{background:#fff;border-color:#bbb}
+    label.field{color:#333}
+    input[type=text],textarea{background:#fff;border:1px solid #999;color:#111}
+    .q{background:#f7f7f7;border-left-color:#999}
+    .q .say{color:#111}
+  }
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="./">The <span>Secret World</span></a>
+  <a class="small" href="./">All modules</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <p class="kicker">Module 6</p>
+  <h1>The Official Field Worksheet</h1>
+  <p class="lede">Grab a pencil — or fill it in here and print it.</p>
+</div></header>
+
+<section class="band"><div class="wrap">
+  <div class="printbar"><button class="print" onclick="window.print()">Print this worksheet</button><span class="mute">Prints clean, without the site furniture.</span></div>
+
+  <form class="sheet" onsubmit="return false">
+    <div class="row two">
+      <div><label class="field" for="name">Explorer name</label><input id="name" type="text"></div>
+      <div><label class="field" for="date">Date</label><input id="date" type="text"></div>
+    </div>
+    <label class="field">Mission type</label>
+    <div class="check">
+      <label><input type="checkbox"> Solo Mode (for me)</label>
+      <label><input type="checkbox"> Co-Op Mode (helping a friend)</label>
+    </div>
+    <p class="mute" style="margin-top:1rem">When your game crashes or you hit a Glitch Trap, use this worksheet to load your tools and map your Secret World.</p>
+
+    <h3>Level 1 · Finding the glitch</h3>
+    <label class="field" for="q1">1. What is the real-life problem you are exploring today?</label>
+    <textarea id="q1" placeholder="Example: I am worried about my maths test. Or: I am mad at my brother."></textarea>
+    <label class="field" for="q2">2. “And when you are dealing with that… what is that like?”</label>
+    <textarea id="q2" placeholder="Write the very first thing that pops into your head. Example: It's like a heavy rock. It's like a buzzing bee."></textarea>
+
+    <h3>Level 2 · Loading the tools</h3>
+    <label class="field" for="q3">3. The Map Pin — “And where is that [it]?” Is it in your body? In the room? Where exactly does it live?</label>
+    <textarea id="q3"></textarea>
+    <label class="field" for="q4">4. The Magnifying Glass — “And what kind of [it] is that?” Does it have a size, a shape, a colour, or a temperature?</label>
+    <textarea id="q4"></textarea>
+    <label class="field" for="q5">5. The Doodle Quest — draw a quick sketch of your landmark. Stick figures and scribbles are great.</label>
+    <textarea id="q5" style="min-height:9em" placeholder="(Draw your glitch here)"></textarea>
+
+    <h3>Level 3 · The Quest Compass</h3>
+    <label class="field" for="q6">6. “And when that [it] is there… what would you like to have happen?”</label>
+    <textarea id="q6" placeholder="Example: I want it to melt. I want a shield. I want it to be quiet."></textarea>
+    <label class="field" for="q7">7. The Trail — “And what needs to happen for that [now] to become [the new thing]?”</label>
+    <textarea id="q7" placeholder="Stare at your drawing and trust your World Engine. What does your brain want to do?"></textarea>
+    <label class="field" for="q8">8. The Autosave — take a deep breath and look at your new map. “What happens to the rest of the map? How do you feel right now?”</label>
+    <textarea id="q8"></textarea>
+
+    <h3>Bonus round · The Portal Generator</h3>
+    <label class="field" for="q9">9. “And as you take this [your new feeling] with you… what is the very first thing you will notice when you face your real-life problem?”</label>
+    <textarea id="q9"></textarea>
+  </form>
+
+  <p style="text-align:center;color:var(--pink);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-top:2rem">Mission accomplished.</p>
+  <p style="text-align:center;color:var(--mute)">Your game has been saved. You may now log off.</p>
+</div></section>
+
+<nav class="pager"><div class="wrap" style="display:flex;gap:1rem;width:100%">
+  <a href="5-logbook.html">← Module 5</a>
+  <span class="spacer"></span>
+  <a href="7-translation-matrix.html">Module 7 →</a>
+</div></nav>
+
+<footer><div class="wrap">The Secret World · Mark Mann-Harris · <a href="mailto:mark@3step.uk">mark@3step.uk</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 1582 Rheims Matthew | Birthing Awareness Publishing</title>
+    <meta name="description" content="The Gospel of Matthew as printed at Rheims in 1582 — original spelling, the translators' marginal notes and the chapter annotations intact. The annotations also in present-day English. Download Volume I free.">
+    <meta property="og:type" content="book">
+    <meta property="og:title" content="The 1582 Rheims Matthew">
+    <meta property="og:description" content="The 1582 text as it was printed, and the annotations every modern edition left out — now in present-day English.">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "The 1582 Rheims: Matthew",
+      "author": {"@type": "Person", "name": "Mark Mann-Harris"},
+      "publisher": {"@type": "Organization", "name": "Birthing Awareness Publishing"},
+      "bookFormat": "https://schema.org/Paperback",
+      "numberOfPages": 196,
+      "inLanguage": "en-GB",
+      "about": "The Gospel of Matthew, Rheims 1582"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "The 1582 Annotations: Matthew, in contemporary English",
+      "author": {"@type": "Person", "name": "Mark Mann-Harris"},
+      "publisher": {"@type": "Organization", "name": "Birthing Awareness Publishing"},
+      "bookFormat": "https://schema.org/EBook",
+      "numberOfPages": 121,
+      "inLanguage": "en-GB"
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        antique: {
+                            bg: '#11100f',
+                            card: '#1a1715',
+                            border: '#383028',
+                            gold: '#c5a059',
+                            goldHover: '#d4af37',
+                            cream: '#e6dfd5',
+                            muted: '#9a9084',
+                            darkRed: '#5c1d1d'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Lora', 'serif'],
+                        display: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #11100f;
+            color: #e6dfd5;
+            font-family: 'Lora', serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cinzel', serif;
+        }
+        .antique-border {
+            border: 1px solid #383028;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+        .antique-gold-rule {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #c5a059, transparent);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #11100f;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #383028;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c5a059;
+        }
+    </style>
+</head>
+<body class="bg-antique-bg text-antique-cream min-h-screen flex flex-col selection:bg-antique-gold selection:text-antique-bg">
+
+    <!-- Header / Navigation (Site Map Structure) -->
+    <header class="border-b border-antique-border bg-antique-card/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex flex-col">
+                <span class="text-antique-gold font-display tracking-widest text-sm md:text-base font-bold">BIRTHING AWARENESS</span>
+                <span class="text-[10px] text-antique-muted tracking-widest font-display">PUBLISHING</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-xs tracking-widest font-display">
+                <a href="#volumes" class="hover:text-antique-gold transition-colors">The Volumes</a>
+                <a href="#look-inside" class="hover:text-antique-gold transition-colors">Look Inside</a>
+                <a href="#author" class="hover:text-antique-gold transition-colors">The Author</a>
+                <a href="#faq" class="hover:text-antique-gold transition-colors">FAQ</a>
+                <a href="#acquire" class="border border-antique-gold/60 px-4 py-2 rounded text-antique-gold hover:bg-antique-gold hover:text-antique-bg transition-all">Download &amp; Buy</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-antique-gold focus:outline-none p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-antique-border bg-antique-card px-6 py-4 space-y-3 font-display text-xs tracking-wider">
+            <a href="#volumes" class="block hover:text-antique-gold py-1">The Volumes</a>
+            <a href="#look-inside" class="block hover:text-antique-gold py-1">Look Inside</a>
+            <a href="#author" class="block hover:text-antique-gold py-1">The Author</a>
+            <a href="#faq" class="block hover:text-antique-gold py-1">FAQ</a>
+            <a href="#acquire" class="block text-antique-gold font-bold py-1">Download &amp; Buy</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-28 md:py-36 px-6 text-center border-b border-antique-border overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(197,160,89,0.04)_0%,transparent_70%)] pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <p class="text-antique-gold tracking-[0.25em] uppercase text-xs md:text-sm font-display mb-6">Mark Mann-Harris &bull; Birthing Awareness Publishing</p>
+            <h1 class="text-3xl md:text-6xl font-bold tracking-tight mb-6 font-display leading-tight">
+                The 1582 Rheims Matthew
+            </h1>
+            <p class="text-antique-gold/90 italic font-serif text-xl md:text-2xl mb-8">
+                &ldquo;The text as it stood. The annotations as they meant.&rdquo;
+            </p>
+            <p class="text-antique-muted text-base md:text-lg max-w-2xl mx-auto mb-12 font-serif leading-relaxed">
+                Thirty years before the King James Version, Catholic scholars translated the New Testament under persecution in Rheims. Discover the original 1582 text and the rigorous, polemical annotations that every modern edition discarded.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#acquire" class="w-full sm:w-auto bg-antique-gold text-antique-bg font-display font-semibold px-8 py-4 rounded hover:bg-antique-goldHover transition-colors tracking-wider text-xs shadow-lg">
+                    Download Free Volume I (PDF)
+                </a>
+                <a href="#look-inside" class="w-full sm:w-auto border border-antique-border bg-antique-card text-antique-cream font-display px-8 py-4 rounded hover:border-antique-gold transition-colors tracking-wider text-xs">
+                    View Side-by-Side Comparison
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Essential Rationale -->
+    <section class="py-20 px-6 bg-[#151311] border-b border-antique-border">
+        <div class="max-w-3xl mx-auto text-center">
+            <span class="text-antique-gold text-xs tracking-[0.2em] font-display uppercase block mb-3">Two Volumes, One Gospel</span>
+            <h2 class="text-2xl md:text-4xl font-bold mb-8 font-display">Why Another Douay-Rheims?</h2>
+            <div class="antique-border bg-antique-card p-8 md:p-12 rounded-lg text-left relative">
+                <div class="antique-gold-rule mb-6"></div>
+                <p class="text-base md:text-lg leading-relaxed font-serif text-antique-cream">
+                    Every traditional Catholic already owns a Douay-Rheims. Almost all of them own Challoner&rsquo;s eighteenth-century revision, which is the standard text and which <strong class="text-antique-gold font-normal underline decoration-antique-gold/40">left the annotations out</strong>. 
+                </p>
+                <p class="text-base md:text-lg leading-relaxed font-serif text-antique-cream mt-4">
+                    This is not a new Bible. It is the 1582 text as it was printed, and &mdash; separately, in English you can actually read &mdash; the annotations every modern edition throws away. The annotations are the product: argumentative, learned, and a direct window on how English Catholics read Scripture under persecution.
+                </p>
+                <div class="antique-gold-rule mt-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Two Volumes Section -->
+    <section id="volumes" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <p class="text-antique-gold tracking-[0.2em] uppercase text-xs font-display mb-2">The Editions</p>
+            <h2 class="text-3xl md:text-5xl font-bold font-display">The Works</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Volume I -->
+            <div class="antique-border bg-antique-card p-8 md:p-10 rounded-lg flex flex-col justify-between relative group hover:border-antique-gold/50 transition-all">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-xs font-display tracking-widest bg-antique-border px-3 py-1 rounded text-antique-gold">Volume I</span>
+                        <span class="text-xs font-display tracking-widest text-antique-muted">196 Pages &bull; Paperback &amp; PDF</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <img src="assets/cover-volume-1.jpg" alt="The 1582 Rheims: Matthew — Volume I" class="mx-auto h-56 md:h-64 w-auto rounded shadow-lg border border-antique-border">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-display">The 1582 Rheims: Matthew</h3>
+                    <p class="text-antique-muted text-sm leading-relaxed mb-6 font-serif">
+                        The complete Gospel of Matthew as it was printed at Rheims in 1582: the first Catholic New Testament in English, translated from the Latin Vulgate thirty years before the King James Version.
+                    </p>
+                    <ul class="space-y-3 text-sm text-antique-cream font-serif border-t border-antique-border pt-6 mb-8">
+                        <li class="flex items-start"><span class="text-antique-gold mr-2">&bull;</span> Exact 1582 spelling &amp; marginal notes</li>
+                        <li class="flex items-start"><span class="text-antique-gold mr-2">&bull;</span> Chapter annotations printed as originally issued</li>
+                        <li class="flex items-start"><span class="text-antique-gold mr-2">&bull;</span> King James name cross-references in square brackets</li>
+                        <li class="flex items-start"><span class="text-antique-gold mr-2">&bull;</span> 1,071 verses, exactly as printed in 1582</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-antique-border">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs text-antique-muted uppercase font-display">Free PDF</span>
+                        <span class="text-xs text-antique-muted uppercase font-display">Paperback &pound;14.99</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="#acquire" class="flex-1 text-center text-xs font-display font-bold tracking-widest border border-antique-gold px-4 py-3 rounded hover:bg-antique-gold hover:text-antique-bg transition-colors">Download Free PDF</a>
+                        <a href="#" data-amazon="vol1_paperback" data-pending="Volume I is being published now, at &pound;14.99. The Amazon link goes live the day it is listed &mdash; the free PDF above works today." class="flex-1 text-center text-xs font-display font-bold tracking-widest bg-antique-gold text-antique-bg px-4 py-3 rounded hover:bg-antique-goldHover transition-colors">Paperback on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volume II -->
+            <div class="antique-border bg-antique-card p-8 md:p-10 rounded-lg flex flex-col justify-between relative group hover:border-antique-gold/50 transition-all">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-xs font-display tracking-widest bg-antique-gold text-antique-bg px-3 py-1 rounded font-bold">Volume II</span>
+                        <span class="text-xs font-display tracking-widest text-antique-muted">121 Pages &bull; Paperback &amp; Kindle</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <img src="assets/cover-volume-2.jpg" alt="The 1582 Annotations: Matthew — Volume II" class="mx-auto h-56 md:h-64 w-auto rounded shadow-lg border border-antique-border">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-display">The 1582 Annotations: Matthew</h3>
+                    <p class="text-antique-muted text-sm leading-relaxed mb-6 font-serif">
+                        The exact same argument, citations, and polemic charges of 1582 rendered in present-day English so modern readers can finally follow the argument without the barrier of the language.
+                    </p>
+                    <ul class="space-y-3 text-sm text-antique-cream font-serif border-t border-antique-border pt-6 mb-8">
+                        <li class="flex items-start"><span class="text-antique-gold mr-2">&bull;</span> 250 annotations &amp; 432 marginal notes rendered</li>
+                        <li class="flex items-start"><span class="text-antique-gold mr-2">&bull;</span> Keyed chapter and verse to Volume I</li>
+                        <li class="flex items-start"><span class="text-antique-gold mr-2">&bull;</span> Short headnote before each chapter</li>
+                        <li class="flex items-start"><span class="text-antique-gold mr-2">&bull;</span> Comprehensive glossary of names &amp; abbreviations</li>
+                    </ul>
+                </div>
+                <div class="pt-4 border-t border-antique-border">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs text-antique-muted uppercase font-display">Paperback &pound;11.99</span>
+                        <span class="text-xs text-antique-muted uppercase font-display">Kindle &pound;6.99</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="#" data-amazon="vol2_paperback" data-pending="Volume II is being published now, at &pound;11.99 in paperback. The Amazon link goes live the day it is listed." class="flex-1 text-center text-xs font-display font-bold tracking-widest bg-antique-gold text-antique-bg px-4 py-3 rounded hover:bg-antique-goldHover transition-colors">Paperback on Amazon</a>
+                        <a href="#" data-amazon="vol2_kindle" data-pending="The Kindle edition is being published now, at &pound;6.99. The Amazon link goes live the day it is listed." class="flex-1 text-center text-xs font-display font-bold tracking-widest border border-antique-gold px-4 py-3 rounded hover:bg-antique-gold hover:text-antique-bg transition-colors">Kindle on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Look Inside: Centerpiece Side-by-Side Annotation Comparison -->
+    <section id="look-inside" class="py-24 px-6 bg-[#141210] border-t border-b border-antique-border">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-antique-gold tracking-[0.2em] uppercase text-xs font-display block mb-2">Look Inside the Work</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-display mb-4">The Annotation Side-by-Side</h2>
+                <p class="text-antique-muted text-sm max-w-2xl mx-auto font-serif">
+                    Witness how the 1582 Rheims translators argued their case in sixteenth-century print, and how Volume II renders that exact polemic into clear, contemporary English.
+                </p>
+            </div>
+
+            <!-- Comparison Box -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                <!-- 1582 Original Text -->
+                <div class="antique-border bg-antique-card p-6 md:p-8 rounded-lg flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between pb-4 mb-4 border-b border-antique-border">
+                            <span class="text-xs font-display tracking-widest text-antique-gold font-bold">Volume I: The 1582 Text</span>
+                            <span class="text-[11px] font-serif text-antique-muted italic">Matthew 16:18</span>
+                        </div>
+                        <p class="font-serif text-sm md:text-base leading-relaxed text-antique-cream/90 italic">
+                            &ldquo;18. And vpon this rocke.] Vpon that which he said Peter was, wil he build his Church: and therfore by most euident sequele he foundeth his Church vpon Peter. And the Aduersaries wrangling against this, do against their owne conscience and knowledge: specially seing they know and confesse that in Christes wordes speaking in the Syriake tonge, there was no difference at al betwene Petrus and Petra&hellip;&rdquo;
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-antique-border/60 text-xs text-antique-muted font-serif">
+                        Original spelling, contractions, and marginal apparatus intact.
+                    </div>
+                </div>
+
+                <!-- Modern Rendering -->
+                <div class="antique-border bg-antique-card p-6 md:p-8 rounded-lg flex flex-col justify-between border-antique-gold/40">
+                    <div>
+                        <div class="flex items-center justify-between pb-4 mb-4 border-b border-antique-border">
+                            <span class="text-xs font-display tracking-widest text-antique-gold font-bold">Volume II: Contemporary Rendering</span>
+                            <span class="text-[11px] font-serif text-antique-muted italic">Annotation 16:18</span>
+                        </div>
+                        <p class="font-serif text-sm md:text-base leading-relaxed text-antique-cream">
+                            &ldquo;Upon that which he said Peter was, he will build his Church; and therefore by most evident consequence he founds his Church upon Peter. And the adversaries, wrangling against this, do it against their own conscience and knowledge &mdash; especially seeing they know and confess that in Christ&rsquo;s words, spoken in Syriac, there was no difference at all between Petrus and Petra&hellip;&rdquo;
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-antique-border/60 text-xs text-antique-gold font-serif">
+                        The exact argument, citations, and polemic &mdash; made readable for the modern reader.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-xs text-antique-muted font-serif italic">
+                    Volume II contains 250 chapter annotations and 432 marginal notes, keyed directly to Volume I.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Author Section -->
+    <section id="author" class="py-24 px-6 max-w-3xl mx-auto text-center">
+        <span class="text-antique-gold tracking-[0.2em] uppercase text-xs font-display block mb-3">About the Author</span>
+        <h2 class="text-3xl font-bold mb-6 font-display">Mark Mann-Harris</h2>
+        <div class="antique-gold-rule w-24 mx-auto mb-8"></div>
+        <p class="font-serif text-antique-cream text-base md:text-lg leading-relaxed mb-6">
+            Mark Mann-Harris is not a cleric or an academic. The authority of these volumes rests entirely upon the historical text itself and the painstaking labour of transcription and rendering.
+        </p>
+        <p class="font-serif text-antique-muted text-sm leading-relaxed">
+            Published under Birthing Awareness Publishing, this project was undertaken to restore to readers the complete textual and polemical heritage of the first English Catholic New Testament without editorial omission.
+        </p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-6 bg-[#151311] border-t border-b border-antique-border">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-antique-gold tracking-[0.2em] uppercase text-xs font-display block mb-2">Common Inquiries</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-display">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-6 font-serif">
+                <!-- FAQ 1 -->
+                <div class="antique-border bg-antique-card p-6 md:p-8 rounded-lg">
+                    <h3 class="text-lg font-display font-bold text-antique-gold mb-2">Is this the Challoner text or the Rheims?</h3>
+                    <p class="text-antique-cream/90 text-sm leading-relaxed">
+                        This is the 1582 Rheims &mdash; the original editio princeps. It is completely distinct from Bishop Challoner&rsquo;s eighteenth-century revision (1749&ndash;52), which modernized the language and notoriously omitted the original polemical annotations.
+                    </p>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="antique-border bg-antique-card p-6 md:p-8 rounded-lg">
+                    <h3 class="text-lg font-display font-bold text-antique-gold mb-2">Does this edition carry an ecclesiastical imprimatur?</h3>
+                    <p class="text-antique-cream/90 text-sm leading-relaxed">
+                        No. These volumes are a historical and scholarly republication of the 1582 editio princeps and its contemporary rendering. They do not carry a modern ecclesiastical imprimatur, nor are they offered for liturgical use.
+                    </p>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="antique-border bg-antique-card p-6 md:p-8 rounded-lg">
+                    <h3 class="text-lg font-display font-bold text-antique-gold mb-2">Why keep the old spelling in Volume I?</h3>
+                    <p class="text-antique-cream/90 text-sm leading-relaxed">
+                        Volume I preserves the original 1582 spelling, contractions, and marginal notes to provide an uncompromising historical witness. Where names differ between Rheims and the King James Version, KJV forms are supplied in square brackets for immediate recognition.
+                    </p>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="antique-border bg-antique-card p-6 md:p-8 rounded-lg">
+                    <h3 class="text-lg font-display font-bold text-antique-gold mb-2">Do I need Volume I to use Volume II?</h3>
+                    <p class="text-antique-cream/90 text-sm leading-relaxed">
+                        Not strictly. Volume II stands on its own as a fascinating reading text of sixteenth-century Catholic apologetic commentary. However, because every note is keyed chapter and verse, pairing Volume II with Volume I (or with any standard Douay-Rheims) unlocks their full explanatory power.
+                    </p>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="antique-border bg-antique-card p-6 md:p-8 rounded-lg">
+                    <h3 class="text-lg font-display font-bold text-antique-gold mb-2">Is the free PDF of Volume I complete?</h3>
+                    <p class="text-antique-cream/90 text-sm leading-relaxed">
+                        Yes. The complimentary PDF contains all 1,071 verses of the Gospel of Matthew in the complete 1582 Rheims formatting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acquire & PDF Download Section -->
+    <section id="acquire" class="py-24 px-6 max-w-2xl mx-auto text-center">
+        <span class="text-antique-gold tracking-[0.2em] uppercase text-xs font-display block mb-3">Acquire the Works</span>
+        <h2 class="text-3xl font-bold mb-4 font-display">Free Text, Printed Books</h2>
+        <p class="text-antique-muted text-sm mb-10 font-serif">
+            The 1582 text is public domain, and the complete edition is free as a PDF &mdash; no email, no list. Volume II, the annotations in present-day English, is in paperback and on Kindle.
+        </p>
+
+        <div class="mb-12 space-y-4">
+            <a href="assets/the-1582-rheims-matthew.pdf" download class="block w-full bg-antique-gold text-antique-bg font-display font-semibold py-4 rounded hover:bg-antique-goldHover transition-colors tracking-wider text-xs">
+                Download Volume I &mdash; Free PDF
+            </a>
+            <p class="text-xs text-antique-muted font-serif">The complete 196-page edition, all 1,071 verses. 487 KB.</p>
+        </div>
+
+        <div class="antique-gold-rule mb-12"></div>
+
+        <div class="space-y-8">
+            <h3 class="text-xl font-display font-bold">The Books</h3>
+
+            <p class="text-antique-muted text-sm font-serif max-w-xl mx-auto">
+                Volume I is free as a PDF, <span class="text-antique-cream">and</span> it is a book.
+                Volume II is a book only &mdash; the annotations exist in print and on Kindle, and in no other form.
+                Cream paper, UK English, printed to order.
+            </p>
+
+            <div class="antique-border bg-antique-card rounded-lg divide-y divide-antique-border/70 text-left">
+
+                <div class="p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                    <div>
+                        <p class="font-display text-xs tracking-widest text-antique-gold mb-1">VOLUME I</p>
+                        <p class="font-serif text-sm text-antique-cream">The 1582 Rheims: Matthew</p>
+                        <p class="font-serif text-xs text-antique-muted mt-1">Free PDF &middot; Paperback &pound;14.99</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="assets/the-1582-rheims-matthew.pdf" download class="text-center text-xs font-display font-bold tracking-widest border border-antique-border px-5 py-3 rounded hover:border-antique-gold transition-colors">Free PDF</a>
+                        <a href="#" data-amazon="vol1_paperback" data-pending="Volume I is being published now, at &pound;14.99. The Amazon link goes live the day it is listed &mdash; the free PDF works today." class="text-center text-xs font-display font-bold tracking-widest bg-antique-gold text-antique-bg px-5 py-3 rounded hover:bg-antique-goldHover transition-colors">Paperback</a>
+                    </div>
+                </div>
+
+                <div class="p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                    <div>
+                        <p class="font-display text-xs tracking-widest text-antique-gold mb-1">VOLUME II</p>
+                        <p class="font-serif text-sm text-antique-cream">The 1582 Annotations: Matthew</p>
+                        <p class="font-serif text-xs text-antique-muted mt-1">Paperback &pound;11.99 &middot; Kindle &pound;6.99 &middot; book only</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="#" data-amazon="vol2_paperback" data-pending="Volume II is being published now, at &pound;11.99 in paperback. The Amazon link goes live the day it is listed." class="text-center text-xs font-display font-bold tracking-widest bg-antique-gold text-antique-bg px-5 py-3 rounded hover:bg-antique-goldHover transition-colors">Paperback</a>
+                        <a href="#" data-amazon="vol2_kindle" data-pending="The Kindle edition is being published now, at &pound;6.99. The Amazon link goes live the day it is listed." class="text-center text-xs font-display font-bold tracking-widest border border-antique-gold px-5 py-3 rounded hover:bg-antique-gold hover:text-antique-bg transition-colors">Kindle</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="text-xs text-antique-muted font-serif italic">
+                The free PDF is a working edition of Volume I. Corrections are welcome &mdash; write and they will go into the next printing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-antique-border bg-[#141210] py-12 px-6 text-center text-xs text-antique-muted font-serif">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <p class="font-display tracking-[0.2em] text-antique-gold">BIRTHING AWARENESS PUBLISHING</p>
+            <p>&copy; 2026 Mark Mann-Harris. All rights reserved. The 1582 Rheims text is in the public domain; Volume II annotations and modern apparatus are copyright.</p>
+            <p class="italic text-antique-cream/80">&ldquo;The text as it stood. The annotations as they meant.&rdquo;</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="custom-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-6">
+        <div class="antique-border bg-antique-card max-w-md w-full p-8 rounded-lg relative text-center">
+            <h3 class="text-xl font-display font-bold text-antique-gold mb-3">Birthing Awareness Publishing</h3>
+            <p id="modal-text" class="text-antique-cream text-sm font-serif mb-6 leading-relaxed">Modal text</p>
+            <button onclick="closeModal()" class="bg-antique-gold text-antique-bg font-display font-semibold px-6 py-2 rounded text-xs tracking-wider hover:bg-antique-goldHover">Close</button>
+        </div>
+    </div>
+
+    <script>
+        /* ------------------------------------------------------------------
+           AMAZON LINKS — paste the live KDP product URLs between the quotes.
+           While a link is empty the button shows a friendly "not listed yet"
+           message instead of dead-ending. Nothing else needs editing.
+           ------------------------------------------------------------------ */
+        const AMAZON = {
+            vol1_paperback: "",   // Volume I  — paperback
+            vol2_paperback: "",   // Volume II — paperback
+            vol2_kindle:    ""    // Volume II — Kindle
+        };
+
+        document.querySelectorAll('[data-amazon]').forEach(function (el) {
+            var url = AMAZON[el.getAttribute('data-amazon')];
+            if (url && /^https?:\/\//.test(url)) {
+                el.setAttribute('href', url);
+                el.setAttribute('target', '_blank');
+                el.setAttribute('rel', 'noopener noreferrer');
+            } else {
+                el.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    openModal(el.getAttribute('data-pending') || 'This edition is not listed yet.');
+                });
+            }
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function openModal(text) {
+            document.getElementById('modal-text').innerText = text;
+            document.getElementById('custom-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('custom-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

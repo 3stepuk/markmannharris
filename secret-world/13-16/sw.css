@@ -31,8 +31,8 @@ a:hover{border-bottom-color:var(--accent)}
 
 /* nav */
 nav.top{border-bottom:1px solid var(--rule);background:rgba(20,22,27,.94);position:sticky;top:0;z-index:20;backdrop-filter:blur(6px)}
-nav.top .wrap{display:flex;align-items:baseline;gap:1.4rem;min-height:56px;padding-top:.6rem;padding-bottom:.6rem}
-nav.top .brand{font-weight:600;margin-right:auto;border:0;color:var(--ink)}
+nav.top .wrap{display:flex;align-items:baseline;flex-wrap:wrap;gap:.35rem 1.1rem;min-height:56px;padding-top:.6rem;padding-bottom:.6rem}
+nav.top .brand{font-weight:600;margin-right:auto;border:0;color:var(--ink);white-space:nowrap}
 nav.top .brand span{color:var(--mute);font-weight:400}
 nav.top a.small{color:var(--mute);font-size:.84rem;border:0;font-family:system-ui,-apple-system,sans-serif;letter-spacing:.04em}
 nav.top a.small:hover{color:var(--ink)}

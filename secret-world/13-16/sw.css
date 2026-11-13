@@ -1,0 +1,120 @@
+/* The Secret World — 13 to 16. A separate skin from the 8–12 edition.
+   Type and measure follow the 13–16 research (§8): 17–18px body, 62ch measure,
+   1.55 leading, ragged right, 2–4 sentence blocks, contrast well above 4.5:1.
+   Ground: inky, not black. Warm off-white ink, one brass accent. */
+
+:root{
+  --ground:#14161b;
+  --panel:#1a1d24;
+  --panel-2:#101217;
+  --ink:#e9e4d9;
+  --mute:#a29b8d;
+  --rule:#2c313b;
+  --accent:#c9a86a;
+  --accent-soft:#8d7444;
+  --measure:62ch;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  font-size:17px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+@media(min-width:900px){body{font-size:18px}}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.6rem}
+.text{max-width:var(--measure)}
+
+/* nav */
+nav.top{border-bottom:1px solid var(--rule);background:rgba(20,22,27,.94);position:sticky;top:0;z-index:20;backdrop-filter:blur(6px)}
+nav.top .wrap{display:flex;align-items:baseline;gap:1.4rem;min-height:56px;padding-top:.6rem;padding-bottom:.6rem}
+nav.top .brand{font-weight:600;margin-right:auto;border:0;color:var(--ink)}
+nav.top .brand span{color:var(--mute);font-weight:400}
+nav.top a.small{color:var(--mute);font-size:.84rem;border:0;font-family:system-ui,-apple-system,sans-serif;letter-spacing:.04em}
+nav.top a.small:hover{color:var(--ink)}
+
+/* head */
+header.head{padding:4.5rem 0 2.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-family:system-ui,-apple-system,sans-serif;color:var(--mute);font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;margin:0 0 1rem}
+h1{margin:0 0 .8rem;font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.08;font-weight:600;letter-spacing:-.01em}
+.lede{font-size:clamp(1.05rem,1.3vw,1.22rem);color:var(--mute);max-width:52ch;margin:0}
+
+/* sections */
+section{padding:3rem 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+h2{font-size:clamp(1.25rem,2.2vw,1.55rem);line-height:1.25;font-weight:600;margin:0 0 1.1rem}
+h3{font-size:1.02rem;font-weight:600;margin:1.6rem 0 .5rem}
+p{margin:0 0 1.05rem;max-width:var(--measure)}
+.mute{color:var(--mute)}
+.small{font-size:.9rem}
+.num{font-family:system-ui,-apple-system,sans-serif;font-size:.78rem;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;margin:0 0 .6rem}
+
+/* before you start */
+.before{background:var(--panel);border:1px solid var(--rule);padding:1.4rem 1.5rem;margin:1.2rem 0 0}
+.before ul{margin:.4rem 0 0;padding-left:1.1rem;max-width:var(--measure)}
+.before li{margin:.35rem 0}
+
+/* quotes */
+.voices{display:grid;gap:.7rem;margin:1.4rem 0;max-width:var(--measure)}
+.voice{border-left:2px solid var(--accent-soft);padding:.15rem 0 .15rem 1rem}
+.voice .said{font-style:italic}
+.voice .of{display:block;color:var(--mute);font-size:.82rem;font-family:system-ui,-apple-system,sans-serif;letter-spacing:.06em;margin-top:.3rem}
+
+/* clinical aside */
+.clin{color:var(--mute);font-size:.86rem;font-family:system-ui,-apple-system,sans-serif;letter-spacing:.02em;margin:-.3rem 0 1.4rem}
+
+/* moves */
+.move{margin:1.6rem 0;padding-top:1.4rem;border-top:1px solid var(--rule)}
+.move:first-of-type{border-top:0;padding-top:0}
+.move h3{margin-top:0}
+.q{margin:.5rem 0;font-style:italic}
+.q .tool{font-style:normal;color:var(--mute);font-size:.82rem;font-family:system-ui,-apple-system,sans-serif;letter-spacing:.05em;margin-left:.4rem}
+
+/* conversation */
+.convo{display:grid;gap:.9rem;margin:1.4rem 0;max-width:var(--measure)}
+.line{padding:.15rem 0 .15rem 1rem;border-left:1px solid var(--rule)}
+.line .who{display:block;font-family:system-ui,-apple-system,sans-serif;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-bottom:.25rem}
+.line.you{border-left:2px solid var(--accent-soft)}
+.line p{margin:0;max-width:none}
+.line .note{display:block;color:var(--mute);font-size:.86rem;margin-top:.35rem;font-style:italic}
+
+/* writing space */
+.write{margin:1.4rem 0;max-width:var(--measure)}
+.write .lines{border:1px solid var(--rule);background:var(--panel-2);padding:1rem 1.1rem}
+.write .lines div{border-bottom:1px solid var(--rule);height:1.7rem}
+.write .lines div:last-child{border-bottom:0}
+.write .hint{color:var(--mute);font-size:.84rem;margin:.5rem 0 0}
+
+/* pager + foot */
+nav.pager{display:flex;justify-content:space-between;gap:1rem;padding:1.6rem 0 3rem;font-size:.9rem}
+footer{color:var(--mute);font-size:.84rem;padding:2rem 0 3.5rem;border-top:1px solid var(--rule);font-family:system-ui,-apple-system,sans-serif}
+footer a{color:var(--mute);border-bottom:0}
+
+/* form (worksheet) */
+form.ws{margin:1.4rem 0 0;max-width:var(--measure)}
+form.ws .row{margin:0 0 1.1rem}
+form.ws label{display:block;font-size:.92rem;margin:0 0 .35rem}
+form.ws label .hint{color:var(--mute);font-weight:400}
+form.ws input[type=text],form.ws textarea{
+  width:100%;background:var(--panel-2);border:1px solid var(--rule);color:var(--ink);
+  font:inherit;font-size:.95rem;padding:.55rem .65rem;border-radius:2px;
+}
+form.ws textarea{min-height:4.6rem;resize:vertical}
+form.ws .pair{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:640px){form.ws .pair{grid-template-columns:1fr}}
+
+/* print */
+@media print{
+  :root{--ground:#fff;--panel:#fff;--panel-2:#fff;--ink:#111;--mute:#555;--rule:#bbb;--accent:#111;--accent-soft:#777}
+  body{font-size:11.5pt;line-height:1.4}
+  nav.top,nav.pager,footer,.noprint{display:none!important}
+  header.head{padding:0 0 1rem}
+  section{border-color:#bbb;padding:1.2rem 0}
+  a{color:#111;border:0}
+  form.ws input[type=text],form.ws textarea{border:1px solid #999;background:#fff}
+  .write .lines{background:#fff}
+}
